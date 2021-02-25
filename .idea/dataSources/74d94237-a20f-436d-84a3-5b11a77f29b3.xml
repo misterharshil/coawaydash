@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="coaway">
+  <database-model serializer="dbm" dbms="AZURE" family-id="AZURE" format-version="4.20">
+    <root id="1">
+      <ServerVersion>12.0.2000</ServerVersion>
+      <Dbms>AZURE</Dbms>
+    </root>
+    <database id="2" parent="1" name="coaway_mobile">
+      <ObjectId>5</ObjectId>
+      <PermissionsCheckSum>1059020366</PermissionsCheckSum>
+      <Grants>5|database||1|connect|G
+</Grants>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <Fingerprint>5.44053/3E5C6327-C11F-4C63-800A-7EA48686F256@coaway</Fingerprint>
+    </database>
+    <database id="3" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <PermissionsCheckSum>12508816988</PermissionsCheckSum>
+      <Grants>1|database||1|connect|G
+1|database||5|alter any user|W
+1|database||5|connect|G
+1|database||8|alter any user|W
+1|database||8|connect|G
+6|role||5|alter|W
+6|role||8|alter|W
+7|role||5|alter|W
+7|role||8|alter|W
+</Grants>
+      <Current>1</Current>
+      <Fingerprint>1.44053/A03F20C1-2971-425C-86C3-FA913E096F12@coaway</Fingerprint>
+    </database>
+    <login id="4" parent="1" name="##MS_ServerStateReader##">
+      <ObjectId>11</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="5" parent="1" name="##MS_ServerStateManager##">
+      <ObjectId>12</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="6" parent="1" name="##MS_DefinitionReader##">
+      <ObjectId>13</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <schema id="7" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="13" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="14" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2021-02-12.17:59:07.257</IntrospectionTimestamp>
+      <Current>1</Current>
+    </schema>
+    <schema id="18" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="19" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <role id="20" parent="2" name="public">
+      <ObjectId>0</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="21" parent="2" name="dbo">
+      <ObjectId>1</ObjectId>
+      <DefaultSchema>dbo</DefaultSchema>
+      <AuthType>instance</AuthType>
+    </role>
+    <role id="22" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+      <DefaultSchema>guest</DefaultSchema>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="23" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="24" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="25" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="26" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="27" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="28" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="29" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="30" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="31" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="32" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="33" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <table id="34" parent="17" name="Admin">
+      <ObjectId>18099105</ObjectId>
+      <CreatedTimestamp>2021-02-10.23:43:31.663</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-10.23:43:31.663</ModifiedTimestamp>
+    </table>
+    <table id="35" parent="17" name="Complaints">
+      <ObjectId>1941581955</ObjectId>
+      <CreatedTimestamp>2020-08-14.21:02:09.330</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-17.12:52:20.947</ModifiedTimestamp>
+    </table>
+    <table id="36" parent="17" name="Covid19SymptomPeopleDetails">
+      <ObjectId>2085582468</ObjectId>
+      <CreatedTimestamp>2020-08-18.20:52:44.820</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-18.20:52:44.820</ModifiedTimestamp>
+    </table>
+    <table id="37" parent="17" name="Covid19Symptoms">
+      <ObjectId>2037582297</ObjectId>
+      <CreatedTimestamp>2020-08-18.20:49:54.240</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-18.22:03:19.030</ModifiedTimestamp>
+    </table>
+    <table id="38" parent="17" name="FoodAccess">
+      <ObjectId>1989582126</ObjectId>
+      <CreatedTimestamp>2020-08-17.17:19:09.997</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-17.17:19:09.997</ModifiedTimestamp>
+    </table>
+    <table id="39" parent="17" name="User">
+      <ObjectId>1621580815</ObjectId>
+      <CreatedTimestamp>2020-08-12.17:43:52.140</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-31.22:00:43.447</ModifiedTimestamp>
+    </table>
+    <column id="40" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="34" name="name">
+      <Position>2</Position>
+      <DataType>varchar(100 char)|0s</DataType>
+    </column>
+    <column id="42" parent="34" name="email">
+      <Position>3</Position>
+      <DataType>nvarchar(100 char)|0s</DataType>
+    </column>
+    <column id="43" parent="34" name="password">
+      <Position>4</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <column id="44" parent="34" name="pin">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="45" parent="34" name="PK__Admin__3213E83FDFF084D0">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="46" parent="34" name="PK__Admin__3213E83FDFF084D0">
+      <ObjectId>34099162</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2021-02-10.23:43:31.680</CreatedTimestamp>
+      <ModifiedTimestamp>2021-02-10.23:43:31.680</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Admin__3213E83FDFF084D0</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="47" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="35" name="userid">
+      <Position>2</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="49" parent="35" name="title">
+      <Position>3</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="50" parent="35" name="description">
+      <Position>4</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <column id="51" parent="35" name="date">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+    </column>
+    <column id="52" parent="35" name="time">
+      <Position>6</Position>
+      <DataType>time|0s</DataType>
+    </column>
+    <column id="53" parent="35" name="status">
+      <Position>7</Position>
+      <DataType>nvarchar(100 char)|0s</DataType>
+    </column>
+    <column id="54" parent="35" name="progressvalue">
+      <Position>8</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="55" parent="35" name="location">
+      <Position>9</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="56" parent="35" name="filename">
+      <Position>10</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="57" parent="35" name="filetype">
+      <Position>12</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+    </column>
+    <index id="58" parent="35" name="PK__Complain__3213E83FD998D65A">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="59" parent="35" name="PK__Complain__3213E83FD998D65A">
+      <ObjectId>1957582012</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-08-14.21:02:09.330</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-14.21:02:09.330</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Complain__3213E83FD998D65A</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="60" parent="35" name="FK__Complaint__useri__75A278F5">
+      <ObjectId>1973582069</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-08-14.21:02:09.330</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-14.21:02:09.330</ModifiedTimestamp>
+      <ColNames>userid</ColNames>
+      <RefTableId>1621580815</RefTableId>
+      <RefTableName>User</RefTableName>
+      <RefKeyName>PK__User__3213E83F82BCC695</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="61" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="36" name="symptomid">
+      <Position>2</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="63" parent="36" name="userid">
+      <Position>3</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="64" parent="36" name="fullName">
+      <Position>4</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="65" parent="36" name="age">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="66" parent="36" name="workLocation">
+      <Position>6</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <index id="67" parent="36" name="PK__Covid19S__3213E83F6538E01F">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="68" parent="36" name="PK__Covid19S__3213E83F6538E01F">
+      <ObjectId>2101582525</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-08-18.20:52:44.823</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-18.20:52:44.823</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Covid19S__3213E83F6538E01F</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="69" parent="36" name="FK__Covid19Sy__sympt__7E37BEF6">
+      <ObjectId>2117582582</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-08-18.20:52:44.823</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-18.20:52:44.823</ModifiedTimestamp>
+      <ColNames>symptomid</ColNames>
+      <RefTableId>2037582297</RefTableId>
+      <RefTableName>Covid19Symptoms</RefTableName>
+      <RefKeyName>PK__Covid19S__3213E83F9B34D0C3</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="70" parent="36" name="FK__Covid19Sy__useri__7F2BE32F">
+      <ObjectId>2133582639</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-08-18.20:52:44.823</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-18.20:52:44.823</ModifiedTimestamp>
+      <ColNames>userid</ColNames>
+      <RefTableId>1621580815</RefTableId>
+      <RefTableName>User</RefTableName>
+      <RefKeyName>PK__User__3213E83F82BCC695</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="71" parent="37" name="id">
+      <Position>1</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="37" name="userid">
+      <Position>2</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="73" parent="37" name="symptoms">
+      <Position>3</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="74" parent="37" name="fromDate">
+      <Position>4</Position>
+      <DataType>date|0s</DataType>
+    </column>
+    <column id="75" parent="37" name="covid19Tested">
+      <Position>5</Position>
+      <DataType>bit|0s</DataType>
+    </column>
+    <column id="76" parent="37" name="totalPeople">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="77" parent="37" name="anyhaveSymptom">
+      <Position>7</Position>
+      <DataType>bit|0s</DataType>
+    </column>
+    <column id="78" parent="37" name="totalPeopleOld">
+      <Position>8</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="79" parent="37" name="totalChildren">
+      <Position>9</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="80" parent="37" name="hospitalName">
+      <Position>10</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="81" parent="37" name="testDate">
+      <Position>11</Position>
+      <DataType>date|0s</DataType>
+    </column>
+    <column id="82" parent="37" name="covid19Status">
+      <Position>12</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+    </column>
+    <column id="83" parent="37" name="location">
+      <Position>13</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="84" parent="37" name="phoneNumber">
+      <Position>14</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+    </column>
+    <column id="85" parent="37" name="covidNSympPeople">
+      <Position>15</Position>
+      <DataType>bit|0s</DataType>
+    </column>
+    <index id="86" parent="37" name="PK__Covid19S__3213E83F9B34D0C3">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="87" parent="37" name="PK__Covid19S__3213E83F9B34D0C3">
+      <ObjectId>2053582354</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-08-18.20:49:54.243</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-18.20:49:54.243</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Covid19S__3213E83F9B34D0C3</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="88" parent="37" name="FK__Covid19Sy__useri__7B5B524B">
+      <ObjectId>2069582411</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-08-18.20:49:54.243</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-18.20:49:54.243</ModifiedTimestamp>
+      <ColNames>userid</ColNames>
+      <RefTableId>1621580815</RefTableId>
+      <RefTableName>User</RefTableName>
+      <RefKeyName>PK__User__3213E83F82BCC695</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="89" parent="38" name="id">
+      <Position>1</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="90" parent="38" name="userid">
+      <Position>2</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="91" parent="38" name="foodDuration">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="92" parent="38" name="totalPeople">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="93" parent="38" name="totalChildren">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="94" parent="38" name="fileName">
+      <Position>6</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="95" parent="38" name="fileType">
+      <Position>7</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+    </column>
+    <column id="96" parent="38" name="location">
+      <Position>8</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="97" parent="38" name="phoneNumber">
+      <Position>9</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+    </column>
+    <index id="98" parent="38" name="PK__FoodAcce__3213E83F6019DB3F">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="99" parent="38" name="PK__FoodAcce__3213E83F6019DB3F">
+      <ObjectId>2005582183</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-08-17.17:19:09.997</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-17.17:19:09.997</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__FoodAcce__3213E83F6019DB3F</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="100" parent="38" name="FK__FoodAcces__useri__787EE5A0">
+      <ObjectId>2021582240</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-08-17.17:19:10</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-17.17:19:10</ModifiedTimestamp>
+      <ColNames>userid</ColNames>
+      <RefTableId>1621580815</RefTableId>
+      <RefTableName>User</RefTableName>
+      <RefKeyName>PK__User__3213E83F82BCC695</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="101" parent="39" name="id">
+      <Position>1</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="102" parent="39" name="name">
+      <Position>2</Position>
+      <DataType>varchar(100 char)|0s</DataType>
+    </column>
+    <column id="103" parent="39" name="email">
+      <Position>3</Position>
+      <DataType>nvarchar(100 char)|0s</DataType>
+    </column>
+    <column id="104" parent="39" name="password">
+      <Position>4</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <column id="105" parent="39" name="isActive">
+      <Position>5</Position>
+      <DataType>bit|0s</DataType>
+    </column>
+    <column id="106" parent="39" name="createdDate">
+      <Position>6</Position>
+      <DataType>datetimeoffset|0s</DataType>
+    </column>
+    <column id="107" parent="39" name="modifiedDate">
+      <Position>7</Position>
+      <DataType>datetimeoffset|0s</DataType>
+    </column>
+    <column id="108" parent="39" name="isriskcalculated">
+      <Position>8</Position>
+      <DataType>bit|0s</DataType>
+    </column>
+    <column id="109" parent="39" name="totalrisk">
+      <Position>9</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+    </column>
+    <column id="110" parent="39" name="riskasscontent">
+      <Position>10</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <index id="111" parent="39" name="PK__User__3213E83F82BCC695">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="112" parent="39" name="PK__User__3213E83F82BCC695">
+      <ObjectId>1637580872</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-08-12.17:43:52.143</CreatedTimestamp>
+      <ModifiedTimestamp>2020-08-12.17:43:52.143</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__User__3213E83F82BCC695</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
